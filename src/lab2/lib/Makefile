@@ -6,3 +6,4 @@ all:$(OBJ)
 	${GCC} ${CFLAG} -c $<
 clean:
 	$(shell rm *.o 2>/dev/null)
+	

@@ -1,7 +1,9 @@
 C_SRC       = $(sort $(wildcard *.c))
 OBJ		    = $(patsubst %.c,%.o,$(C_SRC))
-all:$(OBJ)	
 
+file = main.o
+all:$(OBJ)
+	
 %.o:%.c
 	${GCC} ${CFLAG} -c $<
 clean:
